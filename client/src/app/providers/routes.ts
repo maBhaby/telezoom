@@ -7,6 +7,10 @@ export const router = createRouter({
     {
       path: ROUTER_PATHS.MAIN,
       component: () => import('@/pages/main')
-    }
+    },
+    {
+      path: ROUTER_PATHS.LOGIN,
+      component: () => import('@/pages/login')
+    },
   ]
 })

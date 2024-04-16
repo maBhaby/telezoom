@@ -3,16 +3,14 @@
 </script>
 
 <template>
-  <h1 class="title">Hello world</h1>
-  <RouterView />
+  <div class="app">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped lang="scss">
-  .title {
-    color: red;
-
-    &:hover {
-      color: green;
-    }
+  .app {
+    height: 100dvh;
+    background-color: var(--main-bg-color);
   }
 </style>
