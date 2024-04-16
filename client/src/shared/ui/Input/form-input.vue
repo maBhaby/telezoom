@@ -7,7 +7,8 @@
     modelValue?: string
     label?: string
     name: string
-    type?: 'text' | 'password'
+    type?: 'text' | 'password' | 'email'
+    className?: string
   }>(),
   {
     label: '',
@@ -24,5 +25,6 @@
     :name="name" 
     :type="type"
     :errorMessage="errorMessage"
+    :className="className"
   />
 </template>

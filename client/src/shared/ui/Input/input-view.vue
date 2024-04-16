@@ -6,8 +6,9 @@ withDefaults(
     modelValue?: string
     label?: string
     name?: string
-    type?: 'text' | 'password',
+    type?: 'text' | 'password' | 'email'
     errorMessage?: string
+    className?: string
   }>(),
   {
     label: '',
@@ -23,19 +24,16 @@ const updateValue = (event: Event) => {
 }
 </script>
 <template>
-  <div class="input">
+  <div class="input" :class="{ className: !!className }">
     <label :for="name" v-if="!!label">{{ label }}</label>
-    <InputText 
-      :name="name" 
-      :type="type" 
-      :value="modelValue" 
-      @input="updateValue" 
-      :invalid="!!errorMessage"  
+    <InputText
+      :name="name"
+      :type="type"
+      :value="modelValue"
+      @input="updateValue"
+      :invalid="!!errorMessage"
     />
-    <span 
-      v-if="!!errorMessage"
-      class="input__error"
-    >{{ errorMessage }}</span>
+    <span v-if="!!errorMessage" class="input__error">{{ errorMessage }}</span>
   </div>
 </template>
 <style scoped lang="scss">
