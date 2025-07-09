@@ -11,6 +11,5 @@
 <style scoped lang="scss">
   .app {
     height: 100dvh;
-    background-color: var(--main-bg-color);
   }
 </style>

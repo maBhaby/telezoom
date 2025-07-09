@@ -12,9 +12,13 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: var(--main-bg-color);
+  
 
   &__main {
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>

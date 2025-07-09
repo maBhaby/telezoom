@@ -1,0 +1,1 @@
+export {default as videoIcon} from './icons/video.svg'

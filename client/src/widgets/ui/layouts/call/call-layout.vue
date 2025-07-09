@@ -14,5 +14,6 @@
     display: flex;
     flex-direction: column;
     
+    background-color: var(--main-bg-dark);
   }
 </style>

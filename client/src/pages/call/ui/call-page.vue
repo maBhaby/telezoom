@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { CallLayout } from '@/widgets/ui/layouts'
 </script>
 <template>
-  <h1>CALL ROOM</h1>
+  <CallLayout>
+    <h1>CALL ROOM</h1>
+  </CallLayout>
 </template>

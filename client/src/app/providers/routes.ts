@@ -9,10 +9,6 @@ export const router = createRouter({
       component: () => import('@/pages/main')
     },
     {
-      path: ROUTER_PATHS.LOGIN,
-      component: () => import('@/pages/login')
-    },
-    {
       path: ROUTER_PATHS.CALL_ROOM,
       component: () => import('@/pages/call')
     }

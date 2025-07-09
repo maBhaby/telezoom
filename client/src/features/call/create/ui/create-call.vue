@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
+import {videoIcon} from '@/app/assets'
+
 
 const router = useRouter()
   const handleCreateCall = () => {
@@ -8,6 +10,7 @@ const router = useRouter()
 </script>
 <template>
   <button class="action-btn" @click="handleCreateCall">
+    <img :src="videoIcon" />
     Создать видеовстречу
   </button>
 </template>
@@ -17,6 +20,11 @@ const router = useRouter()
     width: 100%;
     height: 336px;
     background-color: var(--white-color-alpha-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 
     outline: none;
     border: none;
@@ -30,6 +38,10 @@ const router = useRouter()
 
     &:active {
       transform: scale(0.98);
+    }
+
+    img {
+      width: 110px;
     }
   }
 </style>
